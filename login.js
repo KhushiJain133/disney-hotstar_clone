@@ -30,13 +30,11 @@ function saveData() {
     })
   ) {
      alert(localStorage.getItem("username") + " Login");
-    window.location.href = "userpage.html";
-   
-
     let current_user = user_records.filter((v) => {
       return v.username == username && v.psw == psw;
     })[0];
     localStorage.setItem("username", current_user.username);
+     window.location.href = "userpage.html";
   } else if (
     user_records.some((v) => {
       return v.username == username && v.psw != psw;
