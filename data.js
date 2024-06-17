@@ -22,7 +22,7 @@ let movies = [
   {
     name: "Hanuman",
     des: " The legendary Hindu deity Hanuman embarks on new adventures, showcasing his unwavering devotion, valor, and divine prowess through epic battles that leave a lasting impact on mythology.",
-    image: "images/slider 5.JPEG",
+    image: "images/slider 9.JPEG",
   },
   {
     name: "luca",
