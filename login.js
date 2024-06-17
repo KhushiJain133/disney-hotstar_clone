@@ -49,9 +49,10 @@ function saveData() {
       username: username,
       psw: psw,
     });
+     window.location.href = "userpage.html";
     localStorage.setItem("username", JSON.stringify(user_records));
     alert("You are now registered. Login using same username and Password.");
-    window.location.href = "userpage.html";
+   
   }
 }
 function Logout() {
