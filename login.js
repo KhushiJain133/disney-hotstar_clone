@@ -29,8 +29,9 @@ function saveData() {
       return v.username == username && v.psw == psw;
     })
   ) {
+     alert(localStorage.getItem("username") + " Login");
     window.location.href = "userpage.html";
-    alert(localStorage.getItem("username") + " Login");
+   
 
     let current_user = user_records.filter((v) => {
       return v.username == username && v.psw == psw;
