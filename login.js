@@ -29,12 +29,13 @@ function saveData() {
       return v.username == username && v.psw == psw;
     })
   ) {
-     alert(localStorage.getItem("username") + " Login");
+   
     let current_user = user_records.filter((v) => {
       return v.username == username && v.psw == psw;
     })[0];
     localStorage.setItem("username", current_user.username);
      window.location.href = "userpage.html";
+      alert(localStorage.getItem("username") + " Login");
   } else if (
     user_records.some((v) => {
       return v.username == username && v.psw != psw;
@@ -48,9 +49,10 @@ function saveData() {
       psw: psw,
     });
    
-    alert("You are now registered. Login using same username and Password.");
+  
      localStorage.setItem("username", JSON.stringify(user_records));
       window.location.href = "userpage.html";
+      alert("You are now registered. Login using same username and Password.");
    
   }
 }
