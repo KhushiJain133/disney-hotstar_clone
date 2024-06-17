@@ -49,6 +49,7 @@ function saveData() {
     });
    
     alert("You are now registered. Login using same username and Password.");
+     localStorage.setItem("username", JSON.stringify(user_records));
       window.location.href = "userpage.html";
    
   }
