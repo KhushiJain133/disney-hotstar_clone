@@ -49,8 +49,9 @@ function saveData() {
       username: username,
       psw: psw,
     });
-     window.location.href = "userpage.html";
+   
     alert("You are now registered. Login using same username and Password.");
+      window.location.href = "userpage.html";
    
   }
 }
